@@ -1,0 +1,38 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 1000px;
+    background-image: url('https://images.unsplash.com/photo-1472173148041-00294f0814a2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxpYnJhcnklMjBhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+}
+.subj_button{
+    background-color: #4e2723;
+    color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 8px;
+    cursor: pointer;
+}
+.subj_button:hover{
+    background-color: #4f332f;
+}
+#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255, 0.9);
+    padding: 50;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+    width: 200;
+    
+}
+#welcome{
+    text-align: center;
+}
