@@ -10,18 +10,14 @@ function toggleSidebar() {
     sidebar.classList.toggle("collapsed");
 
     if (sidebar.classList.contains("collapsed")) {
-        // Center content
-        gridContainer.style.marginLeft = "auto";
-        gridContainer.style.marginRight = "auto";
-        ulo.style.marginLeft = "auto";
-        ulo.style.marginRight = "auto";
+        sidebar.style.width = "0";
+        gridContainer.style.transform = "translateX(-100px)";
+        ulo.style.transform = "translateX(-100px)";
         toggleBtn.style.left = "10px";
     } else {
-        // Shift content back to the right
-        gridContainer.style.marginLeft = "250px";
-        gridContainer.style.marginRight = "0";
-        ulo.style.marginLeft = "270px";
-        ulo.style.marginRight = "0";
+        sidebar.style.width = "200px";
+        gridContainer.style.transform = "translateX(0)";
+        ulo.style.transform = "translateX(0)";
         toggleBtn.style.left = "210px";
     }
 }
