@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: url('https://images.alphacoders.com/114/1140073.jpg') center/cover no-repeat;
+}
+.sidebar-header img {
+    width: 60px;
+    border-radius: 50%;
+}
+.sidebar-header h1 {
+    margin-left: 14px;
+}
+.sidebar {
+    width: 150px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 60px;
+    transition: width 0.3s ease-in-out;
+}
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.1s;
+}
+.sidebar a:hover {
+    background: #5d5d5d;
+}
+.toggle-btn {
+    position: absolute;
+    left: 160px;
+    top: 10px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: left 0.3s ease-in-out;
+    border-radius: 15px;
+}
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    width: 100%;
+}
+.grid-container, .ulo {
+    transition: transform 0.3s ease-in-out;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    max-width: calc(100% - 250px);
+    overflow-x: hidden;
+    gap: 50px;
+    margin-left: 250px;
+    padding: 15px;
+    justify-content: center;
+}
+.ulo {
+    place-items: center;
+    margin: auto;
+    margin: 20px 0 60px 400px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.box {
+    height: 100px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: auto;
+    color: white;
+    transition: background 0.1s ease-in-out;
+}
+.box:hover {
+    background-color: #5d5d5d;
+}
+
+.collapsed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.collapsed + .content {
+    margin-left: 0;
+}
+.collapsed + .toggle-btn {
+    left: 10px;
+}

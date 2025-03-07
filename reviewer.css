@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://live.staticflickr.com/65535/50261824992_77661482c2_b.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.section {
+    max-width: 900px;
+    background-color: rgb(255, 255, 255, 0.93);
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #34495e;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.subj_button {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.subj_button:hover {
+    background-color: #5d5d5d;
+}
+
+#top {
+    text-align: center;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: #ccc;
+    margin: 20px 0;
+}
