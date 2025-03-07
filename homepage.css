@@ -15,7 +15,7 @@ html, body {
     height: 100%;
     overflow-x: hidden; 
     width: 100%; 
-    background-image: url('https://images4.alphacoders.com/132/1326368.png');
+    background-image: url('https://images.alphacoders.com/114/1140073.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -104,6 +104,7 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     margin: auto;
+    color: white;
 }
 .box:hover{
     background-color: rgb(208, 224, 229);
@@ -121,4 +122,5 @@ html, body {
     left: 0;
     margin: 20px 0 60px 270px; 
     border-radius: 15px;
+    color: white;
 }
