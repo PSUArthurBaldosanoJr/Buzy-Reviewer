@@ -108,7 +108,7 @@ html, body {
     display: grid;
     place-items: center; 
     width: calc(100% - 250px); 
-    height: 250px;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.349);
     background-blend-mode: overlay;
     background-attachment: fixed;
