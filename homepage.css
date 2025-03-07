@@ -1,0 +1,120 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+.body{
+    min-height: 100vh;
+    background: #ffffff;
+    
+}
+html, body {
+    height: 100%;
+    overflow-x: hidden; 
+    width: 100%; 
+    background-image: url('https://images.unsplash.com/photo-1422466654108-5e533f591881?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxhaW5zfGVufDB8fDB8fHww');
+    background-size: cover;
+    background-position: center center;
+}
+.sidebar-header img{
+    width: 60px;
+    border-radius: 50%;
+
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.274);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    padding: 25px 20px;
+    transition: all 0.5s ease;
+}
+.sidebar-header{
+    display: flex;
+    align-items: center;
+}
+.sidebar-header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #714436;
+    margin-left: 5px;  
+}
+.sidebar-links h4{
+    color:#a52a2a;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin: 10px 0;
+    white-space: nowrap;
+    display: flex;
+    align-items: center; 
+    padding-left: 10px; 
+}
+.sidebar-links{
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.sidebar-links li a{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: #a52a2a;
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: 15px 10px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.sidebar-links li a:hover{
+    background: rgb(221, 223, 224);
+    color:#ffffff;
+    border-radius: 4px;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    max-width: calc(100% - 250px);
+    overflow-x: hidden;
+    gap: 100px;
+    margin-left: 250px;
+    padding: 20px;
+    justify-content: center; 
+}
+.box{
+    height: 200px;
+    width: 200px; 
+    border-radius: 25px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: auto;
+}
+.box:hover{
+    background-color: rgb(208, 224, 229);
+}
+.ulo{
+    display: grid;
+    place-items: center; 
+    width: calc(100% - 250px); 
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.349);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px 0 60px 270px; 
+    border-radius: 15px;
+}
