@@ -9,7 +9,7 @@ function toggleSidebar() {
     if (sidebar.classList.contains("collapsed")) {
         sidebar.style.width = "0";
         gridContainer.style.transform = "translateX(-120px)";
-        ulo.style.transform = "translateX(-200px)";
+        ulo.style.transform = "translateX(-120px)";
         toggleBtn.style.left = "10px";
     } else {
         sidebar.style.width = "200px";
