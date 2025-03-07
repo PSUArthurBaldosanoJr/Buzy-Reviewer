@@ -24,6 +24,9 @@ html, body {
     border-radius: 50%;
     margin-left: 10px;
     }
+.sidebar-header{
+    margin-left: 10px;
+    }
 .sidebar {
     width: 200px;
     height: 100vh;
