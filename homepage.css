@@ -80,7 +80,7 @@ html, body {
     left: 10px;
 }
 .grid-container, .ulo {
-    transition: margin-left 0.3s ease-in-out;
+    transition: margin 0.3s ease-in-out;
 }
 .grid-container{
     display: grid;
