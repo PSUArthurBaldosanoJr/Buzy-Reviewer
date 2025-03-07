@@ -29,7 +29,7 @@ html, body {
 .sidebar {
     width: 200px;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
     color: white;
     position: fixed;
@@ -114,7 +114,7 @@ html, body {
     place-items: center; 
     width: calc(100% - 250px); 
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
     background-attachment: fixed;
     position: relative;
