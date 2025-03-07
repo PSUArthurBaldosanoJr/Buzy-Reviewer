@@ -61,12 +61,14 @@ html, body {
     left: 210px;
     top: 20px;
     font-size: 18px;
-    background: #333;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     transition: 0.5s;
+    border-radius: 15px;
 }
 .collapsed {
     width: 0;
