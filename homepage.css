@@ -22,61 +22,62 @@ html, body {
 .sidebar-header img{
     width: 60px;
     border-radius: 50%;
+    margin-left: 10px;
 
-}
-.sidebar{
+    }
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #333;
+    color: white;
     position: fixed;
-    top: 0;
     left: 0;
-    height: 100%;
-    width: 250px;
-    background-color: rgba(0, 0, 0, 0.274);
-    background-blend-mode: overlay;
-    background-attachment: fixed;
-    padding: 25px 20px;
-    transition: all 0.5s ease;
+    top: 0;
+    padding-top: 60px;
+    transition: 0.3s;
 }
-.sidebar-header{
-    display: flex;
-    align-items: center;
-}
-.sidebar-header h1{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #714436;
-    margin-left: 5px;  
-}
-.sidebar-links h4{
-    color:#a52a2a;
-    font-size: 1.5rem;
-    font-weight: bold; 
-    margin: 10px 0;
-    white-space: nowrap;
-    display: flex;
-    align-items: center; 
-    padding-left: 10px; 
-}
-.sidebar-links{
-    list-style: none;
-    margin-top: 20px;
-    padding-left: 10px;
-}
-.sidebar-links li a{
-    display: flex;
-    align-items: center;
-    gap: 0 10px;
-    color: #a52a2a;
-    font-size: 1.15rem;
-    font-weight: bold;
-    padding: 15px 10px;
-    white-space: nowrap;
-    text-decoration: none;
-}
-.sidebar-links li a:hover{
-    background: rgb(221, 223, 224);
-    color:#ffffff;
-    border-radius: 4px;
 
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: #555;
+}
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: 0.3s;
+    width: 100%;
+}
+.toggle-btn {
+    position: absolute;
+    left: 210px;
+    top: 20px;
+    font-size: 18px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.collapsed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.collapsed + .content {
+    margin-left: 0;
+}
+
+.collapsed + .toggle-btn {
+    left: 10px;
 }
 .grid-container{
     display: grid;
