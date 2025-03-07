@@ -15,7 +15,7 @@ html, body {
     height: 100%;
     overflow-x: hidden; 
     width: 100%; 
-    background-image: url('https://wallpapercat.com/w/full/6/1/4/1235043-3840x2160-desktop-4k-grassland-wallpaper.jpg');
+    background-image: url('https://images4.alphacoders.com/132/1326368.png');
     background-size: cover;
     background-position: center center;
 }
@@ -29,7 +29,8 @@ html, body {
 .sidebar {
     width: 200px;
     height: 100vh;
-    background: #333;
+    background-color: rgba(0, 0, 0, 0.349);
+    background-blend-mode: overlay;
     color: white;
     position: fixed;
     left: 0;
