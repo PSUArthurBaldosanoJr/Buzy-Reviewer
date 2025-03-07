@@ -1,59 +1,44 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-}
-.body{
-    min-height: 100vh;
-    background: #ffffff;
-    color: white;
-    
 }
 html, body {
     height: 100%;
-    overflow-x: hidden; 
-    width: 100%; 
-    background-image: url('https://images.alphacoders.com/114/1140073.jpg');
-    background-size: cover;
-    background-position: center center;
+    width: 100%;
+    overflow-x: hidden;
+    background: url('https://images.alphacoders.com/114/1140073.jpg') center/cover no-repeat;
 }
-.sidebar-header img{
+.sidebar-header img {
     width: 60px;
     border-radius: 50%;
     margin-left: 10px;
-    }
-.sidebar-header h1{
+}
+.sidebar-header h1 {
     margin-left: 10px;
-    }
+}
 .sidebar {
     width: 200px;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
-    background-blend-mode: overlay;
     color: white;
     position: fixed;
     left: 0;
     top: 0;
     padding-top: 60px;
-    transition: 0.3s;
+    transition: width 0.3s ease-in-out;
 }
 .sidebar a {
     display: block;
     padding: 15px;
     color: white;
     text-decoration: none;
-    transition: 0.2s;
+    transition: background 0.2s;
 }
 .sidebar a:hover {
     background: #555;
-}
-.content {
-    margin-left: 250px;
-    padding: 20px;
-    transition: 0.3s;
-    width: 100%;
 }
 .toggle-btn {
     position: absolute;
@@ -61,14 +46,60 @@ html, body {
     top: 20px;
     font-size: 18px;
     background-color: rgba(0, 0, 0, 0.8);
-    background-blend-mode: overlay;
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: left 0.3s ease-in-out;
     border-radius: 15px;
 }
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    width: 100%;
+}
+.grid-container, .ulo {
+    transition: transform 0.3s ease-in-out;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    max-width: calc(100% - 250px);
+    overflow-x: hidden;
+    gap: 50px;
+    margin-left: 250px;
+    padding: 15px;
+    justify-content: center;
+}
+.ulo {
+    display: grid;
+    place-items: center;
+    width: calc(100% - 250px);
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-attachment: fixed;
+    margin: 20px 0 60px 270px;
+    border-radius: 15px;
+    color: white;
+}
+.box {
+    height: 100px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: auto;
+    color: white;
+    transition: background 0.3s ease-in-out;
+}
+.box:hover {
+    background-color: rgb(208, 224, 229);
+}
+
 .collapsed {
     width: 0;
     padding: 0;
@@ -77,52 +108,6 @@ html, body {
 .collapsed + .content {
     margin-left: 0;
 }
-
 .collapsed + .toggle-btn {
     left: 10px;
-}
-.grid-container, .ulo {
-    transition: transform 0.3s ease-in-out;
-}
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(3, auto); 
-    max-width: calc(100% - 250px);
-    overflow-x: hidden;
-    gap: 50px;
-    margin-left: 250px;
-    padding: 15px;
-    justify-content: center; 
-}
-.ulo{
-    display: grid;
-    place-items: center; 
-    width: calc(100% - 250px); 
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.8);
-    background-blend-mode: overlay;
-    background-attachment: fixed;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 20px 0 60px 270px; 
-    border-radius: 15px;
-    color: white;
-}
-.box{
-    height: 100px;
-    width: 200px; 
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.8);
-    background-blend-mode: overlay;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: auto;
-    color: white;
-}
-.box:hover{
-    background-color: rgb(208, 224, 229);
 }
