@@ -1,14 +1,14 @@
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    
+    color: white;
 }
 .body{
     min-height: 100vh;
     background: #ffffff;
+    color: white;
     
 }
 html, body {
@@ -23,13 +23,11 @@ html, body {
     width: 60px;
     border-radius: 50%;
     margin-left: 10px;
-
     }
-
 .sidebar {
     width: 200px;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: overlay;
     color: white;
     position: fixed;
@@ -38,7 +36,6 @@ html, body {
     padding-top: 60px;
     transition: 0.3s;
 }
-
 .sidebar a {
     display: block;
     padding: 15px;
@@ -46,7 +43,6 @@ html, body {
     text-decoration: none;
     transition: 0.2s;
 }
-
 .sidebar a:hover {
     background: #555;
 }
@@ -61,7 +57,7 @@ html, body {
     left: 210px;
     top: 20px;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: overlay;
     color: white;
     border: none;
@@ -99,7 +95,8 @@ html, body {
     height: 200px;
     width: 200px; 
     border-radius: 25px;
-    background-color: lightblue;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +113,7 @@ html, body {
     place-items: center; 
     width: calc(100% - 250px); 
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: overlay;
     background-attachment: fixed;
     position: relative;
