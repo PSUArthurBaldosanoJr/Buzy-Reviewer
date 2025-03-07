@@ -94,6 +94,21 @@ html, body {
     padding: 15px;
     justify-content: center; 
 }
+.ulo{
+    display: grid;
+    place-items: center; 
+    width: calc(100% - 250px); 
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px 0 60px 270px; 
+    border-radius: 15px;
+    color: white;
+}
 .box{
     height: 100px;
     width: 200px; 
@@ -110,19 +125,4 @@ html, body {
 }
 .box:hover{
     background-color: rgb(208, 224, 229);
-}
-.ulo{
-    display: grid;
-    place-items: center; 
-    width: calc(100% - 250px); 
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.8);
-    background-blend-mode: overlay;
-    background-attachment: fixed;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 20px 0 60px 270px; 
-    border-radius: 15px;
-    color: white;
 }
