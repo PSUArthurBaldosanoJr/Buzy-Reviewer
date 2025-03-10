@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Buzy</title>
+        <link rel="stylesheet" href="homepage.css">
+    </head>        
+
+    <body>
+        <div class="sidebar collapsed" id="sidebar">
+            <div class="sidebar-header">
+                <img src="images/logo.png"><h1>Buzy Reviewer</h1><br>
+            </div>
+            
+            <a href="profile.html">Profile</a>
+            <hr>
+            <a href="https://classroom.google.com/" title="Classroom" target="_blank">Classroom</a>
+            <a href="https://canvas.instructure.com/" title="Canvas" target="_blank">Canvas</a>
+            <hr>
+            <a href="https://open.spotify.com/" title="Spotify" target="_blank">Spotify</a>
+            <hr>
+            <a href="about.html">About</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+        <button class="toggle-btn" id="toggleBtn" onclick="toggleSidebar()">☰</button>
+        
+        <br><br>
+        <p class="title"><i>Relax and cease the day!<br></i></p>
+        <p class="authors">- Baldosano & Flores</p>
+        <br><br>
+
+        <main>
+            <div class="grid-container">
+                <button class="box artapp" onclick="window.location.href='subjects/artapp.html'">Art Appreciation</button>
+                <button class="box envisci" onclick="window.location.href='subjects/envisci.html'">Environmental Science</button>
+                <button class="box mmw" onclick="window.location.href='subjects/mmw.html'">Mathematics in the Modern World</button>
+                <button class="box dm" onclick="window.location.href='subjects/dm.html'">Discrete Mathematics</button>
+                <button class="box hci" onclick="window.location.href='subjects/hci.html'">Human Computer Interaction</button>
+                <button class="box comprog2" onclick="window.location.href='subjects/comprog2.html'">Computer Programming 2</button>
+                <button class="box fit" onclick="window.location.href='subjects/fit.html'">Fitness Exercises</button>
+                <button class="box nstp" onclick="window.location.href='subjects/nstp.html'">NSTP-CWTS 2</button>
+
+            </div>
+        </main> 
+    </body>
+    <script src="homepage.js"></script>
+</html>

@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+    color: white;
+}
+html, body {
+    
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: url('https://images.alphacoders.com/114/1140073.jpg') center/cover no-repeat;
+}
+.sidebar {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 150px;
+    padding-top: 10px;
+    transition: width 0.3s ease-in-out;
+}
+.sidebar.collapsed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.sidebar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sidebar-header img {
+    width: 60px;
+    border-radius: 50%;
+}
+.sidebar-header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+.sidebar a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: background 0.1s;
+}
+.sidebar a:hover{
+    background: #5d5d5d;
+}
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: left 0.3s ease-in-out;
+}
+.content {
+    padding: 20px;
+    width: 100%;
+    transition: margin-left 0.3s ease-in-out;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px 110px;
+    padding: 15px;
+    justify-content: center;
+    margin: auto;
+    max-width: 900px;
+}
+.grid-container, .title, .authors {
+    transition: transform 0.3s ease-in-out;
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+}
+.title {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold; /* If applicable */
+}
+.sidebar:not(.collapsed) ~ .grid-container,
+.sidebar:not(.collapsed) ~ .ulo {
+    transform: translateX(75px);
+}
+.sidebar.collapsed ~ .grid-container,
+.sidebar.collapsed ~ .ulo {
+    transform: translateX(0);
+}
+.box {
+    height: 170px;
+    width: 250px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow */
+}
+
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Background images for each subject */
+.artapp {
+    background-image: url('images/artapp.jpg');
+}
+
+.envisci {
+    background-image: url('images/envisci.jpg');
+}
+
+.mmw {
+    background-image: url('images/mmw.jpg');
+}
+
+.dm {
+    background-image: url('images/dm.jpg');
+}
+
+.hci {
+    background-image: url('images/hci.jpg');
+}
+
+.comprog2 {
+    background-image: url('images/comprog2.jpg');
+}
+
+.fit {
+    background-image: url('images/fit.jpg');
+}
+
+.nstp {
+    background-image: url('images/nstp.jpg');
+}
