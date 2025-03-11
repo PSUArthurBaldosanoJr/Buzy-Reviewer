@@ -57,7 +57,7 @@ html, body {
     max-width: 900px;
 }
 .grid-container, .title, .authors {
-    margin-left: 500px;
+    margin-left: calc(150px + (100% - 150px - 900px) / 2);
     max-width: 900px;
     text-align: center;
 }
