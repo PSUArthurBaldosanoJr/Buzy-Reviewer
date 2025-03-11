@@ -57,8 +57,9 @@ html, body {
     max-width: 900px;
 }
 .grid-container, .title, .authors {
-    margin-left: 10px;
+    margin-left: 570px;
     max-width: 900px;
+    text-align: center;
 }
 .title {
     font-size: 50px;
