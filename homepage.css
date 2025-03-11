@@ -56,10 +56,19 @@ html, body {
     margin: auto;
     max-width: 900px;
 }
-.grid-container, .title, .authors {
-    margin-left: calc(150px + (100% - 150px - 900px) / 2);
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     max-width: 900px;
+    margin: auto;
+}
+
+.title, .authors {
     text-align: center;
+    width: 100%;
+    margin: 20px 0;
 }
 .title {
     font-size: 50px;
