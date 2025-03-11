@@ -57,7 +57,7 @@ html, body {
     max-width: 900px;
 }
 .grid-container, .title, .authors {
-    margin-left: 250px;
+    margin-left: 300px;
     max-width: 900px;
     text-align: center;
 }
@@ -88,7 +88,6 @@ html, body {
     transform: scale(1.05);
 }
 
-/* Background images for each subject */
 .artapp {
     background-image: url('images/artapp.jpg');
 }
