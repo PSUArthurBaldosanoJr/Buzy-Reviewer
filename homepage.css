@@ -56,19 +56,10 @@ html, body {
     margin: auto;
     max-width: 900px;
 }
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 900px;
+.grid-container, .title, .authors {
     margin: auto;
-}
-
-.title, .authors {
+    max-width: 900px;
     text-align: center;
-    width: 100%;
-    margin: 20px 0;
 }
 .title {
     font-size: 50px;
@@ -97,6 +88,7 @@ html, body {
     transform: scale(1.05);
 }
 
+/* Background images for each subject */
 .artapp {
     background-image: url('images/artapp.jpg');
 }
