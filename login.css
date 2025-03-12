@@ -80,3 +80,20 @@ a {
 a:hover { 
     text-decoration: underline; 
 }
+
+.subj_button {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.subj_button:hover {
+    background-color: #5d5d5d;
+}
