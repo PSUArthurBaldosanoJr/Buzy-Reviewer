@@ -57,9 +57,10 @@ html, body {
     max-width: 900px;
 }
 .grid-container, .title, .authors {
-    margin-left: 570px;
     max-width: 900px;
     text-align: center;
+    margin-left: calc(50% + 200px);
+    transform: translateX(-50%);
 }
 .title {
     font-size: 50px;
