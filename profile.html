@@ -15,22 +15,21 @@
                 background: rgba(0, 0, 0, 0.8);
                 padding: 20px;
                 border-radius: 10px;
+                color: white;
             }
             .profile-pic {
                 width: 100px;
                 height: 100px;
                 border-radius: 50%;
                 background: #ddd;
-                display: inline-block;
-            }
-            .profile-info {
-                margin-top: 10px;
+                margin: 0 auto;
             }
             .profile-info h2 {
-                margin: 5px 0;
+                margin: 10px 0 5px;
             }
             .profile-info p {
-                color: gray;
+                color: #ccc;
+                margin: 5px 0;
             }
             .back-btn {
                 margin-top: 20px;
@@ -40,9 +39,9 @@
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
+                transition: background 0.3s;
             }
             .back-btn:hover {
-                color: white;
                 background: #5d5d5d;
             }
         </style>
@@ -51,7 +50,7 @@
         <div class="profile-container">
             <div class="profile-pic"></div>
             <div class="profile-info">
-                <h2>Student Name:</h2>
+                <h2>Student Name</h2>
                 <p>Email:</p>
                 <p>Bio:</p>
             </div>
