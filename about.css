@@ -6,6 +6,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh; 
+    background: url('https://images5.alphacoders.com/109/thumb-1920-1091561.jpg') center/cover no-repeat;
 }
 
 .subj_button {
