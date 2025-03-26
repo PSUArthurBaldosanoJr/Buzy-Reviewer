@@ -1,101 +1,123 @@
 * { 
-     margin: 0; padding: 0; 
-     box-sizing: border-box; 
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-     color: white;
- }
- body { 
-     display: flex; 
-     justify-content: center; 
-     align-items: center; 
-     height: 100vh; 
-     background: url('https://images5.alphacoders.com/109/thumb-1920-1091561.jpg') center/cover no-repeat;
- }
- .container { 
-     display: flex; 
-     width: 700px; 
-     background: rgba(0, 0, 0, 0.8); 
-     box-shadow: 0 0 10px rgba(0,0,0,0.3); 
-     border-radius: 20px; 
-     overflow: hidden;
-     height: 100%;
- }
- .login-box, .image-box { 
-     width: 50%; 
- }
- .login-box { 
-     padding: 30px; 
- }
- .image-box { 
-     background: url('https://i.pinimg.com/736x/0a/f6/8e/0af68eacc03f806fc84e1e6f2598ea19.jpg') center/cover no-repeat;
-      height: 100%;
- }
- h2 { 
-     margin-bottom: 20px; 
-     text-align: center; 
- }
- input, button { 
-     width: 100%; padding: 10px; 
-     margin: 5px 0; 
-     border-radius: 5px; 
-     border: none; 
- }
- input { 
-     background: rgba(255, 255, 255, 0.2); 
-     border: 1px solid rgba(255, 255, 255, 0.3);
- }
- input::placeholder { 
-     color: rgba(255, 255, 255, 0.6); 
- }
- button { 
-     background: #5d5d5d; color: white;
-     cursor: pointer; 
-     transition: background 0.3s;
- }
- button:hover, .google-btn { 
-     background: white; 
-     color: black; 
- }
- .google-btn { 
-     border: 1px solid #ccc; 
- }
- .options { 
-     display: flex; 
-     justify-content: space-between; 
-     align-items: center;
-     font-size: 14px; 
- }
- .checkbox-container { 
-     display: flex; 
-     align-items: center; 
-     gap: 5px; 
- }
- p { 
-     text-align: center; 
-     margin: 10px 0; 
- }
- a { 
-     color: white; 
-     text-decoration: none; 
-     font-weight: bold; 
- }
- a:hover { 
-     text-decoration: underline; 
- }
- 
- .subj_button {
-     display: block;
-     background-color: rgba(0, 0, 0, 0.8);
-     color: white;
-     padding: 10px 15px;
-     border: none;
-     border-radius: 5px;
-     font-size: 16px;
-     cursor: pointer;
-     margin-bottom: 15px;
-     transition: background 0.3s;
- }
- 
- .subj_button:hover {
-     background-color: #5d5d5d;
- }
+    margin: 0; padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: white;
+}
+
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background: url('https://images5.alphacoders.com/109/thumb-1920-1091561.jpg') center/cover no-repeat;
+}
+
+.container { 
+    display: flex; 
+    width: 700px; 
+    background: rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    border-radius: 20px; 
+    overflow: hidden;
+    height: 100%; /* Ensure full height for the container */
+}
+
+.login-box, .image-box { 
+    width: 50%; 
+    display: flex; /* Add display flex to ensure it stretches properly */
+    align-items: center; /* Center items inside the image-box vertically */
+    justify-content: center; /* Center items horizontally if needed */
+}
+
+.login-box { 
+    padding: 30px; 
+}
+
+.image-box { 
+    background: url('https://i.pinimg.com/736x/0a/f6/8e/0af68eacc03f806fc84e1e6f2598ea19.jpg') center/cover no-repeat;
+    height: 100%; /* Ensure the image-box takes up full height of container */
+    background-size: cover; /* Ensures the image covers the box fully */
+    background-position: center; /* Ensures the image is centered */
+}
+
+h2 { 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+input, button { 
+    width: 100%; padding: 10px; 
+    margin: 5px 0; 
+    border-radius: 5px; 
+    border: none; 
+}
+
+input { 
+    background: rgba(255, 255, 255, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input::placeholder { 
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+button { 
+    background: #5d5d5d; color: white;
+    cursor: pointer; 
+    transition: background 0.3s;
+}
+
+button:hover, .google-btn { 
+    background: white; 
+    color: black; 
+}
+
+.google-btn { 
+    border: 1px solid #ccc; 
+}
+
+.options { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 14px; 
+}
+
+.checkbox-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+}
+
+p { 
+    text-align: center; 
+    margin: 10px 0; 
+}
+
+a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.subj_button {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.subj_button:hover {
+    background-color: #5d5d5d;
+}
