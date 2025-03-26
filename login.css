@@ -18,6 +18,7 @@
      box-shadow: 0 0 10px rgba(0,0,0,0.3); 
      border-radius: 20px; 
      overflow: hidden;
+     height: 100%;
  }
  .login-box, .image-box { 
      width: 50%; 
@@ -27,6 +28,7 @@
  }
  .image-box { 
      background: url('https://i.pinimg.com/736x/0a/f6/8e/0af68eacc03f806fc84e1e6f2598ea19.jpg') center/cover no-repeat;
+      height: 100%;
  }
  h2 { 
      margin-bottom: 20px; 
