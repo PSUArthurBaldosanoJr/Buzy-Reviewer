@@ -25,7 +25,6 @@ body {
 
 .login-box, .image-box { 
     width: 50%; 
-   
 }
 
 .login-box { 
@@ -33,8 +32,7 @@ body {
 }
 
 .image-box { 
-    background: url('https://i.pinimg.com/736x/0a/f6/8e/0af68eacc03f806fc84e1e6f2598ea19.jpg') center/cover no-repeat;
-    
+    background: url('https://i.pinimg.com/736x/0a/f6/8e/0af68eacc03f806fc84e1e6f2598ea19.jpg') center/cover no-repeat; 
 }
 
 h2 { 
