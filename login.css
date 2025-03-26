@@ -4,7 +4,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: white;
 }
-body { 
+html, body { 
     display: flex;
     justify-content: center; 
     align-items: center; 
