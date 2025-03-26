@@ -25,9 +25,7 @@ body {
 
 .login-box, .image-box { 
     width: 50%; 
-    display: flex; /* Add display flex to ensure it stretches properly */
-    align-items: center; /* Center items inside the image-box vertically */
-    justify-content: center; /* Center items horizontally if needed */
+   
 }
 
 .login-box { 
