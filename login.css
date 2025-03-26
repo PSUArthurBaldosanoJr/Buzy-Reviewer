@@ -16,11 +16,11 @@ body {
 .container { 
     display: flex; 
     width: 700px; 
+    height: 450px;
     background: rgba(0, 0, 0, 0.8); 
     box-shadow: 0 0 10px rgba(0,0,0,0.3); 
     border-radius: 20px; 
     overflow: hidden;
-    height: 100%; /* Ensure full height for the container */
 }
 
 .login-box, .image-box { 
